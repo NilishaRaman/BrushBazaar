@@ -1,0 +1,80 @@
+/* ImageWithText.css
+
+.image-container {
+    position: relative;
+    width: 100%; 
+    height: 600px; 
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+  }
+  
+  .button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .text-button-container {
+    font-size: 0; 
+  }
+  
+  .text-button-container p,
+  .text-button-container button {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .text-button-container p {
+    margin-right: 20px; 
+  } */
+
+  .image-carousel {
+    width:100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .image-carousel .slick-slide {
+    position: relative;
+   
+  }
+  
+  .image-carousel img {
+    width: 70%;
+    height: 600px;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 200px;
+  }
+  
+  .image-carousel .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }

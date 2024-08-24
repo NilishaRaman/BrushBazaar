@@ -1,0 +1,67 @@
+/* Basic styling, you'll need to customize this */
+.heading{
+  font-family: cursive;
+ text-align: center;
+}
+.para_prop{
+  font-family: cursive;
+  font-style: oblique;
+  text-align: center;
+  margin-inline-start: 150px;
+  margin-inline-end: 150px;
+  color: rgb(255, 0, 106);
+  font-display: swap;
+  
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: row;;
+    /* align-items: center; */
+  }
+ 
+  .left-section-img1{
+   align-items: start;
+   position: absolute;
+   
+  }
+  .left-section-img2{
+    flex-grow: 1;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 175px;
+
+  }
+
+  .right-section {
+    background-color: #f1f1f1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: sticky;
+  }
+
+  
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    
+    
+  }
+  
+  .feature-card {
+    
+    width: 150px;
+    text-align: center;
+    margin: 40px;
+  }
+  

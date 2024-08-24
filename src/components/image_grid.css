@@ -1,0 +1,61 @@
+/* Basic styling for the image grid using Flexbox */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(231, 229, 229);
+  padding: 20px;
+}
+
+.grid-item {
+  flex: 1 1 200px; /* Flex-grow: 1, flex-shrink: 1, flex-basis: 200px */
+  text-align: center;
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.grid-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.grid-item p {
+  margin: 10px 0;
+}
+
+.yellow {
+  background-color: #fbb704;
+}
+
+.orange {
+  background-color: #f38549;
+}
+
+.blue {
+  background-color:#26a1d9;
+}
+
+.green {
+  background-color: #7fc57f;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .grid-item {
+    flex: 1 1 250px; /* Adjusts the flex-basis for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    flex: 1 1 100%; /* Full width for small screens */
+    margin: 10px 0;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

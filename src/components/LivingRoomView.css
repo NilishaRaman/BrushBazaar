@@ -1,0 +1,87 @@
+.living-room-view {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb {
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filters select, .filters button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .painting-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .painting-card {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .painting-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sold-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .painting-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .painting-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .filters {
+      flex-wrap: wrap;
+    }
+    
+    .filters select, .filters button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .painting-grid {
+      grid-template-columns: 1fr;
+    }
+  }

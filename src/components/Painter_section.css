@@ -1,0 +1,99 @@
+.painter-section {
+    display: flex;
+    background-color: #2F4F4F; /* Dark slate gray, reminiscent of an artist's studio */
+    color: white;
+    padding: 50px;
+  }
+  
+  .content {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; /* A more artistic font */
+  }
+  
+  h2 {
+    color: #FFD700; /* Gold, like a frame */
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Gold to make it stand out */
+  }
+  
+  .stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    float: inline-end;
+    row-gap: 10px;
+    gap: 30px;
+  }
+  
+  .image-section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100;
+    background: url('path-to-palette-image.jpeg') no-repeat center center;
+    background-size: contain;
+    opacity: 0.2;
+  }
+  
+  /* You would need to add specific styling for artwork images */
+  
+  @media (max-width: 768px) {
+    .painter-section {
+      flex-direction: column;
+    }
+    
+    .content {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+    
+    .stats {
+      flex-wrap: wrap;
+    }
+    
+    .stat-item {
+      flex-basis: 45%;
+      margin-bottom: 15px;
+    }
+  }

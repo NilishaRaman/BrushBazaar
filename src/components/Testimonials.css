@@ -1,0 +1,86 @@
+.testimonials {
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .testimonial-card {
+    display: none;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testimonial-card.active {
+    display: block;
+  }
+  
+  .rating .star {
+    color: gold;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #555;
+  }
+  
+
+  .testimonial-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Adjust width as needed */
+    max-height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Optional: for circular images */
+  }

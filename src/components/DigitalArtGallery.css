@@ -1,0 +1,116 @@
+.art-discovery {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Futura', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    padding: 40px;
+  }
+  
+  .art-discovery h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #bc4c2d;
+  }
+
+  
+  /* h1 {
+    text-align: center;
+    color: #00ffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+  } */
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: #e0e0e0;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  nav li.active {
+    color: #ff00ff;
+    border-bottom: 2px solid #ff00ff;
+  }
+  
+  .art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .art-card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,255,255,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .art-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .art-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .art-info {
+    padding: 20px;
+  }
+  
+  .art-info h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #00ffff;
+  }
+  
+  .art-info .artist {
+    color: #ff00ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .art-info .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+  }
+  
+  .arrow {
+    background-color: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 12px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background-color: #00ffff;
+    color: #121212;
+  }
+
